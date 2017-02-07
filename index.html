@@ -6,93 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>James Ferguson's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.js"></script>
-    <!-- <script src="js/tweenmax.js"></script> -->
     <script src="js/main.js"></script>
 </head>
 
-<body>
+<body id="top">
     <header>
         <nav id="nav_wrap">
             <ul id="nav" class="nav">
-                <!-- <li id="nav"><a href="#home">Home</a></li> -->
                 <li id="nav"><a href="#about">About</a></li>
-                <li id="nav"><a href="#resume">Resume</a></li>
-                <li id="nav"><a href="#skills">Skills</a></li>
+                <li id="nav"><a href="#skills_experience">Skills & Experience</a></li>
                 <li id="nav"><a href="#projects">Projects</a></li>
                 <li id="nav"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
         <div class="banner">
-            <div id="mugshot" class="wow bounceInUp">
+            <div id="landing" class="wow slideInRight" data-wow-delay=".5s">
                 <h1>I'm James Ferguson...</h1>
-                  <br>
+                <br>
                 <h3>I'm a web developer interested in learning as much as I can about Front-end, Back-end, APIs and whatever else I come across.
-                  new technoligies etc</h3>
+                You'll always find me learning, building things and surrounding myself with good people.</h3>
             </div>
         </div>
     </header>
 
     <section id="about">
-    <div class="wow bounceInUp">
-        <h2>About Me</h2>
-        <img src="images/headshot.JPG" alt="James" class="headshot">
-        <p>After many years in a different industry, I realised I need to find a new industry which I was both interested in and pashonate about.</p>
-        <p>After taking an evening course at GA campus and talking to friends in the tech industry, I knew this was where I was supposed to be!</p>
-        <p>I have really enjoyed the 12 week web dev course and learning new languages and technoliges has been great...</p>
+        <div class="wow bounceInUp" data-wow-delay="0.3s">
+            <h2>About Me</h2>
+            <img src="images/headshot.JPG" alt="James" class="headshot">
+            <P>Hi there,</P>
+            <p>After many years in another industry, I realised I needed to find a new challenge and work at something that was both techincal and creative.</p>
+            <p>I decided to take an evening coding class at GA campus and I knew this was the path I was supposed to take!</p>
+            <p>Straight away I signed myself up for the Web Development Immersive course and never looked back.</p>
+            <p>I have really enjoyed the 12 week course and learning new languages and technologies has been an awesome experience.</p>
 
-        <div class="contact_details">
-            <h2>Contact Details</h2>
-            <p class="phone">
-                <span>James Ferguson</span>
-                <br>
-                <span>0404 325 505</span>
-                <br>
-                <span>
-          <a href="mailto:jamesedwardferguson78@gmail.com">jamesedwardferguson78@gmail.com</a>
-        </span>
-            </p>
-        </div>
+            <div id="contact_details">
+                    <p>James Ferguson</p>
+                    <p><a href="tel:+61404325505">0404 325 505</a></p>
+            </div>
         </div>
     </section>
 
 
-</section>
-    <section id="resume">
-        <div class="education">
+    <section id="skills_experience">
+
+        <div class="skill">
             <h1>
-  <span>Education</span>
-  </h1>
-        </div>
-        <div class="education_container">
-            <h3>General Assembly</h3>
-            <p class="info">
-                Web Development Immersive
-            </p>
-            <br>
-            <p>October 2016 - January 2017</p>
-            <p>A three month, full-time intensive course that teaches programming fundementals, front-end development, back-end development and group work using Github.</p>
-        </div>
-    </section>
+                <span>Skills & Experience</span>
+            </h1>
 
-    <section id="skills">
-      <div class="skill">
-        <h1>
-        <span>Skills</span>
-        </h1>
-        <div class="skill_list">
-          <li>JavaScript</li> <br>
-          <li>jQuery</li> <br>
-          <li>Backbone.js</li> <br>
-          <li>Ruby on Rails</li> <br>
-          <li>Git</li> <br>
-          <li>HTML5/CSS3</li>
+            <div class="skill_list">
+
+                <div class="icon">
+                    <i class="devicon-html5-plain colored"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-css3-plain colored"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-jquery-plain colored"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-backbonejs-plain colored"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-ruby-plain colored"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-rails-plain colored"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-postgresql-plain colored"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-git-plain colored"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-heroku-plain colored"></i>
+                </div>
+            </div>
         </div>
-      </div>
+
+            <div id="resume" class="wow tada" data-wow-delay=".5s">
+                <a href="images/james_ferguson_cv.pdf">
+                    <img src="images/cv_icon.png" alt="click here for cv">
+                </a>
+            </div>
+    </section>
 
     <section id="projects">
         <div class="row">
@@ -105,8 +114,9 @@
                         <img src="images/tictactoe.png" alt="Tic Tac Toe">
                         <div class="description">
                             <h4>Tic Tac Toe</h4>
-                            <p>My first project required a functioning Tic Tac Toe game using HTML, JavaScript and CSS. It was my first change to really put into practice all of the teachings from the frist couple of weeks of classwork.</p>
-                            <p><a href="https://jamesedwardferguson.github.io/Project-zero---Tic-Tac-Toe/">Github Repo</a></p>
+                            <p>This was my very first project:- the requirement was for a functioning Tic Tac Toe game using HTML, JavaScript and CSS.</p>
+                            <p>It was my first chance to really put into practice all of the teachings from the frist couple of weeks of classwork.</p>
+                            <p><a href="https://jamesedwardferguson.github.io/Project-zero---Tic-Tac-Toe/">Demo</a></p>
                         </div>
                     </div>
                     <br>
@@ -115,9 +125,10 @@
                             <img src="images/lunchon.png" alt="LunchOn">
                             <div class="description">
                                 <h4>lunchOn</h4>
-                                <p>Our second project was a fullstack ruby on rails application. I decided to make a lunch inspiration website, which allows users to both post and view other users posted items. I really enjoyed putting into practice the
-                                    'Rails' MVC structure and developing something that felt quite large in terms of our progression in class.</p>
-                                <p><a href="https://lunchon.herokuapp.com/">Github Repo</a></p>
+                                <p>My second project was a fullstack ruby on rails CRUD application.</p>
+                                <p>I decided to make a lunch inspiration website, which allows users to both post and view other users lunch items.</p>
+                                <p>I really enjoyed putting into practice the 'Rails' MVC structure and developing something that felt quite large in terms of our progression in class.</p>
+                                <p><a href="https://lunchon.herokuapp.com/">Demo</a></p>
                             </div>
                         </div>
                         <br>
@@ -126,8 +137,10 @@
                                 <img src="images/crafty_Tours.png" alt="Crafty Tours">
                                 <div class="description">
                                     <h4>Crafty Tours</h4>
-                                    <p>This was our first group project. I teamed up with two classmates and we decided on a back-end rails application, using Backbone for the front-end.</p>
-                                    <p><a href="https://lunchon.herokuapp.com/">Click to see site</a></p>
+                                    <p>This was our first group project and the requiment was a fullstack application.</p>
+                                    <p>I teamed up with two other classmates and we decided on a back-end rails application, using Backbone for the front-end and incorporating Google maps API.</p>
+                                    <p>The site is for craft beer brewary tours and shows different tours and locations in a single page format.</p>
+                                    <p><a href="https://crafty-tours.herokuapp.com/">Demo</a></p>
                                 </div>
                             </div>
                             <br>
@@ -136,8 +149,10 @@
                                     <img src="images/randomusic.png" alt="randoMusic">
                                     <div class="description">
                                         <h4>randoMusic</h4>
-                                        <p>For my last project I built a music site using the Soundcloud API to allow a user to pick a genre and generate a random song.</p>
-                                        <p><a href="#">Click to see site</a></p>
+                                        <p>For my last project I built a fullstack music site using ruby on rails and the Soundcloud API.</p>
+                                        <p>The site lets a user pick a genre and generate a random song from the soundcloud user library.</p>
+                                        <p>As a music fan I really enjoyed working on this project and getting to grips with the Soundcloud API was a very interesting experience.
+                                        <p><a href="https://random-usic.herokuapp.com/">Demo</a></p>
                                     </div>
                                 </div>
                                 <br>
@@ -151,30 +166,38 @@
     </section>
 
     <footer>
-<section id="contact">
+        <section id="contact">
+            <ul class="social">
+                <li>
+                    <a target="_blank" href="https://twitter.com/jamesedwardfer1">
+                        <img src="images/twitter.png" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://au.linkedin.com/in/james-ferguson78">
+                        <img src="images/linkedin.png" alt="linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/jamesedwardferguson">
+                        <img src="images/github.png" alt="github">
+                    </a>
+                </li>
+            </ul>
 
-        <ul class="social">
-            <li>
-                <a href="https://twitter.com/jamesedwardfer1">
-                    <img src="images/twitter.png" alt="twitter">
-                </a>
-            </li>
-            <li>
-                <a href="https://au.linkedin.com/in/james-ferguson78">
-                    <img src="images/linkedin.png" alt="linkedin">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/jamesedwardferguson">
-                    <img src="images/github.png" alt="github">
-                </a>
-            </li>
-        </ul>
+            <div class="email">
+                <a href="mailto:jamesedwardferguson78@gmail.com?subject=Role%20for%20James">
+                    jamesedwardferguson78@gmail.com</a>
+            </div>
+
         </section>
+
     </footer>
-  <div class="to-top-container">
-    <a href="#" id="toTop">^</a>
-  </div>
+
+    <div class="to-top-container">
+        <a href="#top" id="toTop">^</a>
+    </div>
+
 </body>
 
 </html>
