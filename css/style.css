@@ -84,7 +84,6 @@ ul#nav li.current a {
     color: #F06000;
 }
 
-
 /*----------------------------------------------*/
 /*	Top page
 /*----------------------------------------------*/
@@ -170,7 +169,6 @@ header .banner h3 {
     margin-bottom: 2.5vh;
 }
 
-
 #contact_details p, a {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
@@ -182,8 +180,6 @@ header .banner h3 {
 #contact_details a:hover {
     color: hotpink;
 }
-
-
 
 
 /*----------------------------------------------*/
@@ -209,7 +205,6 @@ header .banner h3 {
     margin-bottom: 6vh;
     margin: 40px;
 }
-
 
 .skill_list {
     height: 24vh;
@@ -304,6 +299,7 @@ header .banner h3 {
 /*	Bottom of page
 /*----------------------------------------------*/
 
+
 /* footer social links */
 
 footer {
@@ -351,10 +347,10 @@ footer .social li {
     display: inline-block;
 }
 
+
 /*----------------------------------------------*/
 /*	Top of page button
 /*----------------------------------------------*/
-
 
 #toTop {
     background-color: rgba(0, 0, 0, 0.9);
